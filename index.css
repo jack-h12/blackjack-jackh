@@ -1,0 +1,74 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: url("https://static.vecteezy.com/system/resources/previews/015/234/519/large_2x/felt-green-soft-rough-textile-material-background-texture-close-up-poker-table-tennis-ball-table-cloth-empty-green-fabric-background-free-photo.jpg");
+    background-size: cover;          /* Ensures image covers the whole area */
+    background-position: center;     /* Centers the image in the viewport */
+    background-repeat: no-repeat;    /* Prevents tiling */
+    background-attachment: fixed;    /* Keeps image in place during scroll */
+    text-align: center;
+    margin: 0;
+}
+
+.app {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    transform: scale(0.7);
+    transform-origin: top center;
+    display: flex;
+    gap: 3rem;
+}
+
+.title {
+    color: goldenrod;
+    margin: 0 auto 2rem auto;
+    font-size: 5rem;
+    background: linear-gradient()
+}
+
+.subtitles {
+    color: white;
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+
+#want-to-play {
+    font-style: italic;
+}
+
+.btn {
+    display: block;
+    margin: 0.5rem auto;
+    width: 25rem;
+    height: 4rem;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 0.5rem;
+    color: green;
+    font-family: "Inter", Arial, sans-serif;
+    padding: 0.7rem 2.7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid rgb(128, 97, 18);
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    filter: brightness(0.8);
+    font-size: 1.6rem;
+}
+
+.new-game {
+    background-color: green;
+    color: goldenrod;
+    border: 2px solid rgb(9, 97, 9);
+}
+
+#resulting-message {
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
