@@ -10,6 +10,14 @@ let total = 0
 let isAlive = true
 let isInGame = false
 
+let player = {
+    name: "Jack",
+    dollars: 10000
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.dollars
+
 
 function generateRandomCards() {
     firstCard = Math.floor(Math.random() * 13) + 1
@@ -42,11 +50,14 @@ function renderGame() {
             messageEl.textContent = "Still in the game twin. You tryna draw another card?"
         } else if (total === 21) {
             messageEl.textContent = "YOU HAVE WON TWIN!!!"
+            player.dollars = player.dollars * 10
             isAlive = false
         } else {
-            messageEl.textContent = "twin you lost :( "
+            messageEl.textContent = "twin you lost :("
+            player.dollars = Math.round(player.dollars/1.25)
             isAlive = false
         }
+    playerEl.textContent = player.name + ": $" + player.dollars
     }
 }
 
